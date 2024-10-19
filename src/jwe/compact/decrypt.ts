@@ -94,7 +94,7 @@ export async function compactDecrypt(
     options,
   )
 
-  const result = { plaintext: decrypted.plaintext, protectedHeader: decrypted.protectedHeader! }
+  const result = { plaintext: decrypted.plaintext, protectedHeader: decrypted.protectedHeader!, cek: decrypted.cek }
 
   if (typeof key === 'function') {
     return { ...result, key: decrypted.key }

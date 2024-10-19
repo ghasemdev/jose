@@ -699,6 +699,9 @@ export interface FlattenedDecryptResult {
   /** Plaintext. */
   plaintext: Uint8Array
 
+  /** secret key. */
+  cek: KeyLike | Uint8Array
+
   /** JWE Protected Header. */
   protectedHeader?: JWEHeaderParameters
 
@@ -714,6 +717,9 @@ export interface GeneralDecryptResult extends FlattenedDecryptResult {}
 export interface CompactDecryptResult {
   /** Plaintext. */
   plaintext: Uint8Array
+
+  /** secret key. */
+  cek: KeyLike | Uint8Array
 
   /** JWE Protected Header. */
   protectedHeader: CompactJWEHeaderParameters

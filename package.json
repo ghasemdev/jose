@@ -1,6 +1,6 @@
 {
-  "name": "jose",
-  "version": "5.9.4",
+  "name": "partsoftware-jose",
+  "version": "5.9.8",
   "description": "JWA, JWS, JWE, JWT, JWK, JWKS for Node.js, Browser, Cloudflare Workers, Deno, Bun, and other Web-interoperable runtimes",
   "keywords": [
     "browser",
@@ -51,13 +51,16 @@
     "workers",
     "x509"
   ],
-  "homepage": "https://github.com/panva/jose",
-  "repository": "panva/jose",
+  "homepage": "https://github.com/ghasemdev/jose",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghasemdev/jose.git"
+  },
   "funding": {
-    "url": "https://github.com/sponsors/panva"
+    "url": "https://github.com/sponsors/ghasemdev"
   },
   "license": "MIT",
-  "author": "Filip Skokan <panva.ip@gmail.com>",
+  "author": "ghasemdev",
   "sideEffects": false,
   "imports": {
     "#dist": {
@@ -435,6 +438,7 @@
     "esbuild": "^0.23.1",
     "glob": "^11.0.0",
     "nock": "^13.5.5",
+    "npm-run-all": "^4.1.5",
     "npm-run-all2": "^6.2.3",
     "patch-package": "^8.0.0",
     "prettier": "^3.3.3",
